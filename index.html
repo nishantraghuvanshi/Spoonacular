@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Recommender</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Recipe Recommender</h1>
+        <form id="recipeForm">
+            <label for="cuisine">Select Cuisine:</label>
+            <select name="cuisine" id="cuisine">
+                <option value="italian">Italian</option>
+                <option value="indian">Indian</option>
+                <option value="mexican">Mexican</option>
+                <!-- Add more options as per your preference -->
+            </select>
+
+            <label for="diet">Select Diet:</label>
+            <select name="diet" id="diet">
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="glutenFree">Gluten-Free</option>
+                <!-- Add more options as per your preference -->
+            </select>
+
+            <label for="type">Select Type:</label>
+            <select name="type" id="type">
+                <option value="mainCourse">Main Course</option>
+                <option value="dessert">Dessert</option>
+                <option value="appetizer">Appetizer</option>
+                <!-- Add more options as per your preference -->
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="recipeResults">
+            <!-- Recipe results will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
